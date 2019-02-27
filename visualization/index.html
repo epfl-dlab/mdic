@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="//d3js.org/d3.v5.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="toggle.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+<nav class="navbar  navbar-expand-lg navbar-expand-md  navbar-expand-  navbar-light bg-light justify-content-between">
+    <!-- Brand -->
+    <a class="navbar-brand" onclick="show_initial()">Message Distortion in <br/> Information Cascades</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Links -->
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <ul class="navbar-nav mr-auto">
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Breast Cancer
+                </a>
+                <div class="dropdown-menu">
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa1000727')">
+                        Effect of Screening Mammography on Breast-Cancer Mortality in Norway
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa1103507')">
+                        Exemestane for Breast-Cancer Prevention in Postmenopausal Women
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa1206809')">
+                        Effect of Three Decades of Screening Mammography on Breast-Cancer Incidence
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa1404037')">
+                        Adjuvant Exemestane with Ovarian Suppression
+                        in Premenopausal Breast Cancer </a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Immunization
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa021134')">
+                        A Population-Based Study of Measles, Mumps, and Rubella Vaccination and Autism</a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa0907413')">
+                        Response to a Monovalent 2009 Influenza A (H1N1) Vaccine
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa1102287')">
+                        First Results of Phase 3 Trial of RTS,S/AS01 Malaria Vaccine in African Children
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa1200850')">
+                        Waning Protection after Fifth Dose of Acellular Pertussis Vaccine in Children In the United
+                        States
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Dieting
+                </a>
+                <div class="dropdown-menu">
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa0804748')">
+                        Comparison of Weight-Loss Diets with
+                        Different Compositions of Fat, Protein, and Carbohydrates
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa1014296')">
+                        Changes in Diet and Lifestyle and Long-Term Weight Gain in Women and Men
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa1112010')">
+                        Association of Coffee Drinking with Total and Cause-Specific Mortality
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa1200303')">
+                        Primary Prevention of Cardiovascular Disease with a Mediterranean Diet
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Cardiovascular Diseases
+                </a>
+                <div class="dropdown-menu">
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa072761')">
+                        Effect of Rosiglitazone on the Risk of
+                        Myocardial Infarction and Death from Cardiovascular Causes
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa1003114')">
+                        Effect of Sibutramine on Cardiovascular
+                        Outcomes in Overweight and Obese Subjects
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa1003833')">
+                        Azithromycin and the Risk of
+                        Cardiovascular Death
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" onclick="create_visualization('NEJMoa1304127')">
+                        Global Sodium Consumption and Death from
+                        Cardiovascular Causes
+                    </a>
+                </div>
+            </li>
+
+
+        </ul>
+
+
+    </div>
+
+
+</nav>
+
+
+<div class="container-fluid">
+
+    <div class="row initial">
+
+        <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2 initial">
+            <p>
+                This website allows you to visualize the dataset in the paper <i>Message Distortion in Information
+                Cascades.</i> Code and data for the paper are available <a href="https://github.com/epfl-dlab/mdic">
+                here</a>.</p>
+
+            <p>
+                Please cite this paper as follows:
+            </p>
+            <pre><code>@inproceedings{horta_ribeiro_message_2019,
+author={Horta Ribeiro, Manoel and Gligori\'c, Kristina and West, Robert},
+title={Message Distortion in Information Cascades},
+booktitle={Proceedings of the 2019 World Wide Web Conference},
+series={WWW '19},
+year={2019},
+isbn={978-1-4503-6674-8},
+location={San Francisco, CA, USA},
+doi={10.1145/3308558.3313531},
+publisher={International World Wide Web Conferences Steering Committee},
+address={Republic and Canton of Geneva, Switzerland},
+keywords={Information cascades; message distortion; information distortion}
+}</code></pre>
+
+            <p>
+                The following YouTube video explains the visualization tool:
+            </p>
+
+            <iframe width="100%" height="400"
+                    src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-6 col-md-6  col-sm-12 information">
+        </div>
+
+
+        <div class="col-lg-6 col-md-6 col-sm-12s visualization">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 offset-lg-6 col-md-6 offset-md-6 col-sm-12 aligner">
+            <div class="onoffswitch" style="display: none">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"
+                       onclick="shift_control()" checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1  doggos">
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<script>
+
+
+    var control_graph = false;
+    var stored_name = "";
+
+
+    function copyToClipboard(str) {
+        // Create new element
+        var el = document.createElement('textarea');
+        // Set value (string to be copied)
+        el.value = str;
+        // Set non-editable to avoid focus and move outside of view
+        el.setAttribute('readonly', '');
+        el.style = {position: 'absolute', left: '-9999px', display:"none"};
+        document.body.appendChild(el);
+        // Select text inside element
+        el.select();
+        // Copy text to clipboard
+        document.execCommand('copy');
+        // Remove temporary element
+        document.body.removeChild(el);
+    }
+
+    var lines_val = [321, 256, 192, 128, 64, 0];
+    var values = ["~2000", "~1024", "~512", "~256", "~128", "~64"];
+    var stars = {"": 0, "A": 4, "B": 3, "C": 2, "D": 1};
+    var margin = {top: 39, right: 60, bottom: 40, left: 40},
+        width = 400 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+    var orientations = {
+        "bottom-to-top": {
+            size: [width, height],
+            x: function (d) {
+                return d.x;
+            },
+            y: function (d) {
+                return height - d.y;
+            }
+        }
+    };
+
+    function show_initial() {
+        d3.select(".initial")
+            .style("display", "block");
+        d3.select("svg").remove();
+        d3.selectAll(".text").remove();
+        d3.selectAll("#table_facts_keywords").remove();
+        d3.selectAll(".onoffswitch").style("display", "none");
+
+    }
+
+    function shift_control() {
+        console.log(control_graph);
+        control_graph = !control_graph;
+        console.log(control_graph);
+
+        create_visualization(stored_name);
+    }
+
+
+    function create_visualization(name) {
+        d3.select(".initial")
+            .style("display", "none")
+
+        stored_name = name;
+        if (control_graph) {
+            var file_vis = "../data_processed/data_visualization/" + name + "_control.json"
+        } else {
+            var file_vis = "../data_processed/data_visualization/" + name + ".json"
+        }
+
+        d3.select("svg").remove();
+        d3.selectAll(".text").remove();
+        d3.selectAll("#table_facts_keywords").remove();
+        d3.selectAll(".onoffswitch").attr("style", "display: block;");
+        d3.selectAll(".doggos").append("div").attr("id", "table_facts_keywords");
+        $(function () {
+            $("#table_facts_keywords").load("doggos_table.html");
+        });
+        d3.selectAll(".information")
+            .append("div")
+            .classed("text", true)
+            .append("text")
+            .append("p")
+            .text("Click one of the nodes to see the information cascade! This will populate the table below.");
+
+
+        var svg = d3.select(".visualization").selectAll("svg")
+            .data(d3.entries(orientations))
+            .enter().append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .attr("class", "main")
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        d3.json(file_vis).then(function (data) {
+
+            svg.each(function (orientation) {
+                var svg = d3.select(this),
+                    o = orientation.value;
+
+// Compute the layout.
+                var treemap = d3.tree().size(o.size);
+                var nodes = d3.hierarchy(data);
+                nodes = treemap(nodes);
+                var links = nodes.descendants().slice(1);
+
+
+                var lines_values = lines_val.map(function (e, i) {
+                    return [e, values[i]];
+                });
+
+
+                svg.selectAll(".line")
+                    .data(lines_val)
+                    .enter().append("line")
+                    .attr("x1", -10)
+                    .attr("x2", 330)
+                    .attr("y1", function (d) {
+                        return d;
+                    })
+                    .attr("y2", function (d) {
+                        return d;
+                    })
+                    .attr("style", 'stroke:rgb(255,0,0);stroke-width:1;stroke-dasharray:5,5');
+
+                svg.selectAll(".line_text")
+                    .data(lines_values)
+                    .enter()
+                    .append("text")
+                    .attr("class", "line_text")
+                    .attr("x", 350)
+                    .attr("z-index", 0)
+                    .attr("y", function (d) {
+                        return d[0] - 4;
+                    })
+                    .text(function (d) {
+                        return d[1];
+                    });
+
+                if (!control_graph) {
+
+// Create the link lines.
+                    svg.selectAll(".link")
+                        .data(links)
+                        .enter().append("path")
+                        .attr("class", "link")
+                        .attr("d", function (d) {
+                            return "M" + d.x + "," + o.y(d)
+                                + "C" + d.x + "," + (o.y(d) + o.y(d.parent)) / 2
+                                + " " + d.parent.x + "," + (o.y(d) + o.y(d.parent)) / 2
+                                + " " + d.parent.x + "," + o.y(d.parent);
+                        });
+                }
+
+
+                var tags, facts_text;
+// Create the node circles.
+                svg.selectAll(".node")
+                    .data(nodes.descendants())
+                    .enter()
+                    .append("g")
+                    .append("circle")
+                    .attr("class", function (d) {
+
+                        if (d.data["level"] == 0) {
+                            tags = d.data["Tagging"]["Fine"];
+                            facts_text = d.data["Doggos_text"];
+                        }
+                        return "node"
+                    })
+                    .attr("r", function (d) {
+                        return 22 * 0.8 ** d.data["level"]
+                    })
+                    .attr("cx", o.x)
+                    .attr("cy", o.y)
+                    .on("click", function (d) {
+
+                        if (d.data["level"] == 0) {
+                            var name = d.data["Question"]
+                        } else {
+                            var name = d.data["Question"] + "_" + d.data["AssignmentId"];
+                        }
+                        d3.selectAll("td p").remove();
+
+                        svg.selectAll(".node").classed("active", false);
+                        d3.select(this).classed("active", true);
+                        d3.selectAll(".text").remove();
+                        d3.selectAll(".information")
+                            .append("div")
+                            .classed("text", true)
+                            .append("text")
+                            .html(`<span style='margin: 3px' class= 'kindalikealink' onclick="copyToClipboard('` + name + `')")>` + `Copy Question Identifier</span>`)
+                            .append("p")
+                            //you may want to comment that
+                            .text(d.data["Answer"]);
+
+// keywords
+                        for (var key in tags) {
+                            if (tags.hasOwnProperty(key)) {
+                                var vals = tags[key];
+
+                                for (var val of vals) {
+
+                                    d3.select("#" + val + "_kw")
+                                        .append("p")
+                                        .classed("p_kw", d.data["Tagging"]["Fine"].hasOwnProperty(key))
+                                        .text(key);
+                                }
+                            }
+                        }
+
+                        d3.select("#Conclusion-general_kw")
+                            .append("p")
+                            .html("&#10007;");
+
+
+// doggos text
+                        for (var key in facts_text) {
+                            if (facts_text.hasOwnProperty(key)) {
+                                var val = facts_text[key];
+                                d3.select("#" + key + "_fc")
+                                    .append("p")
+                                    .text(val);
+                            }
+                        }
+
+// doggos text
+                        for (var key in d.data["Doggos_crowd"]["Fine"]) {
+                            if (d.data["Doggos_crowd"]["Fine"].hasOwnProperty(key)) {
+                                console.log(val, key);
+                                var val = d.data["Doggos_crowd"]["Fine"][key][0];
+                                d3.select("#" + key + "_vl")
+                                    .append("p")
+                                    .classed(val, true)
+                                    .text(val)
+                                    .append("p")
+                                    .html("&starf;".repeat(stars[val]) + "&star;".repeat(4 - stars[val]))
+                            }
+                        }
+                    });
+            });
+
+        });
+
+    }
+
+
+</script>
+</body>

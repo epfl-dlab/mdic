@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Volkhov|Raleway|Anonymous+Pro');
+
+
+$black: #000000;
+$darkgrey: #232323;
+$lightgrey: #777777;
+$lightergrey: #EEEEEE;
+
+body {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+
+  p {
+    font-size: 11px;
+    margin: 3px;
+
+  }
+
+}
+
+
+// Navbar
+
+.navbar {
+  background-color: white;
+  background-image: none;
+  box-shadow: none;
+  border: 0px;
+  border-bottom: 1px solid $darkgrey;
+
+  .navbar-brand {
+    font-family: 'Volkhov', serif;
+    font-size: 18px;
+    cursor: pointer;
+
+
+  }
+
+  .dropdown-toggle {
+    min-width: 100px;
+    text-align: left;
+  }
+
+  .dropdown-item {
+    display: inline-block;
+    height: auto;
+    white-space: normal;
+
+  }
+
+
+  .navbar-nav a {
+    font-family: 'Raleway', serif;
+    display: inline-block;
+    font-size: 16px;
+    color: $darkgrey;
+
+    &:hover {
+      background-color: #aaaaaa;
+      cursor: pointer;
+    }
+  }
+}
+
+// Initial
+
+.initial {
+  p {
+    font-size: 15px;
+  }
+
+  pre {
+    font-size: 10px;
+    background-color: $lightergrey;
+    font-family: "Anonymous Pro", monospace;
+  }
+}
+
+// Table
+
+.doggos {
+  overflow-x: auto;
+}
+
+
+table {
+  width: 100%;
+
+  .table_kw {
+    p {
+      font-weight: lighter;
+      color: #444444;
+      text-align: center;
+    }
+
+    .p_kw {
+      font-weight: bolder;
+      color: #111111;
+    }
+  }
+
+  .table_vl p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #Conclusion-general_kw p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  td {
+    font-size: 10px;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #333;
+  }
+
+  .tg-cat {
+    color: #ffff;
+    background-color: #333;
+    font-size: 14px;
+    padding: 3px 3px;
+    text-align: center;
+    border-style: none;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: white;
+  }
+
+
+  .tg-sub-cat {
+    color: #ffff;
+    background-color: #555;
+    font-size: 12px;
+    padding: 3px 3px;
+    text-align: center;
+    border-style: none;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: white;
+    font-weight: bold;
+
+  }
+
+  .tg-h {
+    color: #000;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: right;
+    border-style: none;
+
+  }
+
+  th, td {
+    padding: 0 3px 0 3px;
+
+  }
+
+
+}
+
+.doggos {
+  padding: 0;
+}
+
+.visualization {
+
+  svg {
+    min-width: 400px;
+    margin: 0 auto;
+    display: block;
+
+
+    .link {
+      fill: none;
+      stroke: #000;
+    }
+
+    .border {
+      fill: none;
+      shape-rendering: crispEdges;
+      stroke: #aaa;
+    }
+
+    .node {
+      fill: #333;
+      stroke: #fff;
+    }
+
+    .active {
+      fill: #fff;
+      stroke: #333;
+    }
+
+  }
+
+}
+
+
+.text {
+  border: 1px solid $lightgrey;
+  color: #111111;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 11px;
+  display: block;
+  max-height: 400px;
+  max-width: 700px;
+  overflow-y: auto;
+  text-align: justify;
+
+    .kindalikealink {
+      color: #EEEEEE;
+      background-color: #333333;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #888888;
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: #EEEEEE;
+      }
+    }
+
+  text {
+
+
+
+    p {
+      font-size: 12px;
+      margin: 1px;
+
+    }
+  }
+
+
+}
+
+
+.line_text {
+  text-anchor: end;
+  fill: black;
+}
+
+.A {
+
+  font-weight: bolder;
+}
+
+.B {
+  font-weight: bold;
+}
+
+.C {
+  font-weight: normal;
+}
+
+.D {
+  font-weight: lighter;
+
+}
+

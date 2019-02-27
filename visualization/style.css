@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Volkhov|Raleway|Anonymous+Pro");
+body {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+}
+body p {
+  font-size: 11px;
+  margin: 3px;
+}
+
+.navbar {
+  background-color: white;
+  background-image: none;
+  box-shadow: none;
+  border: 0px;
+  border-bottom: 1px solid #232323;
+}
+.navbar .navbar-brand {
+  font-family: "Volkhov", serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+.navbar .dropdown-toggle {
+  min-width: 100px;
+  text-align: left;
+}
+.navbar .dropdown-item {
+  display: inline-block;
+  height: auto;
+  white-space: normal;
+}
+.navbar .navbar-nav a {
+  font-family: "Raleway", serif;
+  display: inline-block;
+  font-size: 16px;
+  color: #232323;
+}
+.navbar .navbar-nav a:hover {
+  background-color: #aaaaaa;
+  cursor: pointer;
+}
+
+.initial p {
+  font-size: 15px;
+}
+.initial pre {
+  font-size: 10px;
+  background-color: #EEEEEE;
+  font-family: "Anonymous Pro", monospace;
+}
+
+.doggos {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+}
+table .table_kw p {
+  font-weight: lighter;
+  color: #444444;
+  text-align: center;
+}
+table .table_kw .p_kw {
+  font-weight: bolder;
+  color: #111111;
+}
+table .table_vl p {
+  text-align: center;
+  font-size: 14px;
+}
+table #Conclusion-general_kw p {
+  text-align: center;
+  font-size: 18px;
+}
+table td {
+  font-size: 10px;
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #333;
+}
+table .tg-cat {
+  color: #ffff;
+  background-color: #333;
+  font-size: 14px;
+  padding: 3px 3px;
+  text-align: center;
+  border-style: none;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+table .tg-sub-cat {
+  color: #ffff;
+  background-color: #555;
+  font-size: 12px;
+  padding: 3px 3px;
+  text-align: center;
+  border-style: none;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: 2px;
+  border-color: white;
+  font-weight: bold;
+}
+table .tg-h {
+  color: #000;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: right;
+  border-style: none;
+}
+table th, table td {
+  padding: 0 3px 0 3px;
+}
+
+.doggos {
+  padding: 0;
+}
+
+.visualization svg {
+  min-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+.visualization svg .link {
+  fill: none;
+  stroke: #000;
+}
+.visualization svg .border {
+  fill: none;
+  shape-rendering: crispEdges;
+  stroke: #aaa;
+}
+.visualization svg .node {
+  fill: #333;
+  stroke: #fff;
+}
+.visualization svg .active {
+  fill: #fff;
+  stroke: #333;
+}
+
+.text {
+  border: 1px solid #777777;
+  color: #111111;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 11px;
+  display: block;
+  max-height: 400px;
+  max-width: 700px;
+  overflow-y: auto;
+  text-align: justify;
+}
+.text .kindalikealink {
+  color: #EEEEEE;
+  background-color: #333333;
+  cursor: pointer;
+}
+.text .kindalikealink:hover {
+  background-color: #888888;
+  cursor: pointer;
+}
+.text .kindalikealink:active {
+  background-color: #EEEEEE;
+}
+.text text p {
+  font-size: 12px;
+  margin: 1px;
+}
+
+.line_text {
+  text-anchor: end;
+  fill: black;
+}
+
+.A {
+  font-weight: bolder;
+}
+
+.B {
+  font-weight: bold;
+}
+
+.C {
+  font-weight: normal;
+}
+
+.D {
+  font-weight: lighter;
+}
+
+/*# sourceMappingURL=style.css.map */
