@@ -218,14 +218,22 @@ keywords={Information cascades; message distortion; information distortion}
     </div>
 
     <div class="row">
-        <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1  doggos">
 
-    <div style="text-align: center; display:none" class="subtitle">
-        <p><b>A</b> - Fact captured by summary / <b>B</b> - Fact partially captured by summary / <b>C</b> - Fact not captured by summary / <b>D</b> - Fact contradicted by summary</p>
-    </div>        </div>
+                <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1 ">
 
+        <div style="text-align: center; display:none" class="subtitle">
+            <p><b>A</b> - Fact captured by summary / <b>B</b> - Fact partially captured by summary / <b>C</b> - Fact not
+                captured by summary / <b>D</b> - Fact contradicted by summary</p>
+        </div>
+        </div>
     </div>
 
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1  doggos">
+
+        </div>
+
+    </div>
 
 
 </div>
@@ -245,7 +253,7 @@ keywords={Information cascades; message distortion; information distortion}
         el.value = str;
         // Set non-editable to avoid focus and move outside of view
         el.setAttribute('readonly', '');
-        el.style = {position: 'absolute', left: '-9999px', display:"none"};
+        el.style = {position: 'absolute', left: '-9999px', display: "none"};
         document.body.appendChild(el);
         // Select text inside element
         el.select();
@@ -488,11 +496,15 @@ keywords={Information cascades; message distortion; information distortion}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110389775-2"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-110389775-2');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110389775-2');
 </script>
 
 </body>
