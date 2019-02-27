@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <meta charset="utf-8">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -294,9 +295,9 @@ keywords={Information cascades; message distortion; information distortion}
 
         stored_name = name;
         if (control_graph) {
-            var file_vis = "../data_processed/data_visualization/" + name + "_control.json"
+            var file_vis = "./data_visualization/" + name + "_control.json"
         } else {
-            var file_vis = "../data_processed/data_visualization/" + name + ".json"
+            var file_vis = "./data_visualization/" + name + ".json"
         }
 
         d3.select("svg").remove();
@@ -479,3 +480,5 @@ keywords={Information cascades; message distortion; information distortion}
 
 </script>
 </body>
+</html>
+
