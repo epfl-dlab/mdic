@@ -188,7 +188,7 @@ keywords={Information cascades; message distortion; information distortion}
             </p>
 
             <iframe width="100%" height="400"
-                    src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG"
+                    src="https://www.youtube.com/watch?v=wcpAX3jnwZo"
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
     </div>
@@ -220,8 +220,12 @@ keywords={Information cascades; message distortion; information distortion}
     <div class="row">
         <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1  doggos">
 
-        </div>
+    <div style="text-align: center; display:none" class="subtitle">
+        <p><b>A</b> - Fact captured by summary / <b>B</b> - Fact partially captured by summary / <b>C</b> - Fact not captured by summary / <b>D</b> - Fact contradicted by summary</p>
+    </div>        </div>
+
     </div>
+
 
 
 </div>
@@ -275,9 +279,9 @@ keywords={Information cascades; message distortion; information distortion}
             .style("display", "block");
         d3.select("svg").remove();
         d3.selectAll(".text").remove();
+        d3.selectAll(".subtitle").style("display", "none");
         d3.selectAll("#table_facts_keywords").remove();
         d3.selectAll(".onoffswitch").style("display", "none");
-
     }
 
     function shift_control() {
@@ -291,7 +295,7 @@ keywords={Information cascades; message distortion; information distortion}
 
     function create_visualization(name) {
         d3.select(".initial")
-            .style("display", "none")
+            .style("display", "none");
 
         stored_name = name;
         if (control_graph) {
@@ -304,6 +308,7 @@ keywords={Information cascades; message distortion; information distortion}
         d3.selectAll(".text").remove();
         d3.selectAll("#table_facts_keywords").remove();
         d3.selectAll(".onoffswitch").attr("style", "display: block;");
+        d3.selectAll(".subtitle").style("display", "block")
         d3.selectAll(".doggos").append("div").attr("id", "table_facts_keywords");
         $(function () {
             $("#table_facts_keywords").load("doggos_table.html");
