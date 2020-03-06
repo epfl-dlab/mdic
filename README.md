@@ -22,7 +22,7 @@ instructions of the paper "Message Distortion in Information Cascades" ([which y
 
 You may find the data in the data folder `./data` (duh). 
 
-We make the data available in two formats: a `.csv` file and a two `.graphml` file. 
+We make the data available in two formats: a `.csv` and `.graphml`. 
 The latter is the format used in the analysis of the data (for convenience).
 
 
