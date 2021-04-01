@@ -2,20 +2,15 @@
 
 This repository contains the data and the experiments and the 
 instructions of the paper "Message Distortion in Information Cascades" ([which you can read clicking here](https://arxiv.org/pdf/1902.09197.pdf)):
-   
-    @inproceedings{horta_ribeiro_message_2019,
-    author={Horta Ribeiro, Manoel and Gligor\'ic, Kristina and West, Robert},
-    title={Message Distortion in Information Cascades},
-    booktitle={Proceedings of the 2019 World Wide Web Conference},
-    series={WWW '19},
-    year={2019},
-    isbn={978-1-4503-6674-8},
-    location={San Francisco, CA, USA},
-    doi={10.1145/3308558.3313531},
-    publisher={International World Wide Web Conferences Steering Committee},
-    address={Republic and Canton of Geneva, Switzerland},
-    keywords={Information cascades; message distortion; information distortion}
-    }
+  
+  ~~~bibtex
+ @inproceedings{horta_ribeiro_message_2019,
+ author={Ribeiro, Manoel Horta and Gligor\'ic, Kristina and West, Robert},
+ title={Message Distortion in Information Cascades},
+ booktitle={Proceedings of the 2019 World Wide Web Conference},
+ year={2019},
+ }
+ ~~~
 
 [Chek out the accompanying website which allows you to visualize the data.](https://epfl-dlab.github.io/mdic/)
 # Data
