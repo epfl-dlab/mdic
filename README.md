@@ -5,14 +5,14 @@ instructions of the paper "Message Distortion in Information Cascades" ([which y
   
   ~~~bibtex
  @inproceedings{horta_ribeiro_message_2019,
- author={Ribeiro, Manoel Horta and Gligor\'ic, Kristina and West, Robert},
+ author={Ribeiro, Manoel Horta and Gligori\'c, Kristina and West, Robert},
  title={Message Distortion in Information Cascades},
  booktitle={Proceedings of the 2019 World Wide Web Conference},
  year={2019},
  }
  ~~~
 
-[Chek out the accompanying website which allows you to visualize the data.](https://epfl-dlab.github.io/mdic/)
+[Check out the accompanying website which allows you to visualize the data.](https://epfl-dlab.github.io/mdic/)
 # Data
 
 You may find the data in the data folder `./data` (duh). 
