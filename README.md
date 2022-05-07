@@ -1,7 +1,6 @@
 # Message Distortion in Information Cascades
 
-This repository contains the data and the experiments and the 
-instructions of the paper "Message Distortion in Information Cascades" ([which you can read clicking here](https://arxiv.org/pdf/1902.09197.pdf)):
+This repository contains the data and code of the paper "Message Distortion in Information Cascades" ([which you can read clicking here](https://arxiv.org/pdf/1902.09197.pdf)):
   
   ~~~bibtex
  @inproceedings{horta_ribeiro_message_2019,
